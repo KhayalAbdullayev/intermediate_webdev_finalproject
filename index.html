@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Calculate interest rates with our easy-to-use Interest Rate Calculator. Enter your principal amount, interest rate, and time period to compute your interest.">
+    <meta name="description" content="Calculate simple interest rates easily with this online calculator tool.">
     <title>Interest Rate Calculator</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Interest Rate Calculator</h1>
-    
     <div class="calculator">
-        <div class="input-group">
-            <label for="principal">Principal Amount:</label>
-            <input type="number" id="principal" placeholder="Enter principal amount">
-        </div>
+        <label for="principal">Amount:</label>
+        <input type="number" id="principal" value="1000">
         
-        <div class="input-group">
-            <label for="rate">Interest Rate (%):</label>
-            <input type="number" id="rate" placeholder="Enter interest rate">
-        </div>
+        <label for="rate">Interest Rate (%):</label>
+        <input type="number" id="rate" value="5">
         
-        <div class="input-group">
-            <label for="years">Time Period (years):</label>
-            <input type="number" id="years" placeholder="Enter number of years">
-        </div>
+        <label for="years">No. of Years:</label>
+        <input type="number" id="years" value="2">
         
         <button id="computeBtn">Compute Interest</button>
-        
-        <div class="result">
-            <span id="result"></span>
-        </div>
+        <span id="result"></span>
     </div>
-    
-    <script src="dist/bundle.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
